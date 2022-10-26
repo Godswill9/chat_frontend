@@ -210,7 +210,7 @@ useEffect(()=>{
 <div className='cont'>
 <div className='header'>
     {/* <img style={{"background":"blue"}} src={`./upload/${friendsPic}`}></img> */}
-    <img style={{"background":"green"}} src="/logo192.png"></img>
+    <img style={{"background":"black"}} src="/logo192.png"></img>
     {/* <div style={{"background":"blue", borderRadius:"50%", "padding":"10px", color:"white","margin":"4px", fontSize:"17px", "fontWeight":"bold"}}>{"user"}</div> */}
     <span className='name'>{friendsName}</span>
 </div>
