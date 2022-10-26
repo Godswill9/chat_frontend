@@ -28,7 +28,8 @@ export default function LoginPage() {
     const sendData=async(obj:Object)=>{
         var idd=""
         await axios({
-          url:"http://localhost:8080/api/login",
+          url:"https://chat-5gm5.onrender.com/api/login",
+          // url:"http://localhost:8080/api/login",
           method:"POST",
           data:obj,
           withCredentials:true

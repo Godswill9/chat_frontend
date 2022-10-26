@@ -57,7 +57,8 @@ export default function AuthPage() {
       //   obj2:obj2
       // }
         await axios({
-          url:"http://localhost:8080/api/newUser",
+          // url:"http://localhost:8080/api/newUser",
+          url:"https://chat-5gm5.onrender.com/api/newUser",
           method:"POST",
           data:obj,
           withCredentials:true

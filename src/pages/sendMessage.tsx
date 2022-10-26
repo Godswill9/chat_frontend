@@ -14,7 +14,8 @@ import io from "socket.io-client"
     const fetchUsers=async()=>{
         await axios({
             method:"Get",
-            url:"http://localhost:8080/api/users",
+            url:"https://chat-5gm5.onrender.com/api/users",
+            // url:"http://localhost:8080/api/users",
             withCredentials:true
          })
          .then((res)=>{

@@ -34,7 +34,8 @@ async function refresh(){
     // })
     await axios({
         method:"POST",
-        url:"http://localhost:8080/api/fetchMessages",
+        url:"https://chat-5gm5.onrender.com/api/fetchMessages",
+        // url:"http://localhost:8080/api/fetchMessages",
         data:{myId:newStr, friend:newStr2},
         withCredentials:true
     })
@@ -76,7 +77,8 @@ useEffect(()=>{
         const obj={id:newStr2, myId:newStr}
         await axios({
             method:"POST",
-            url:"http://localhost:8080/api/user",
+            url:"https://chat-5gm5.onrender.com/api/user",
+            // url:"http://localhost:8080/api/user",
             data:obj,
             withCredentials:true
         })
@@ -119,7 +121,8 @@ useEffect(()=>{
         // console.log(count)
         await axios({
             method:"POST",
-            url:"http://localhost:8080/api/sendMessage",
+            url:"https://chat-5gm5.onrender.com/api/sendMessage",
+            // url:"http://localhost:8080/api/sendMessage",
             data:requestObj,
             withCredentials:true
         })
@@ -138,7 +141,8 @@ useEffect(()=>{
             var time=h+":"+m+":"+s
             await axios({
                 method:"POST",
-                url:"http://localhost:8080/api/sendMessage",
+                url:"https://chat-5gm5.onrender.com/api/sendMessage",
+                // url:"http://localhost:8080/api/sendMessage",
                 data:{...form, time:time},
                 withCredentials:true
             })
